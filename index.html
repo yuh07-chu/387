@@ -219,7 +219,7 @@
     <div id="fake-screen-2" class="fake-body" style="display: none;">
          <div class="fake-card" style="border-top: 5px solid #e74c3c;">
               <h2 class="error-text">System Warning: Protocol Overlap</h2>
-              <p>An unexpected file exception error has occurred...</p>
+              <p>An unexpected file exception error has occurred. Corruption detected in line 404. Foreign encryption detected. To bypass security logs and force execute the visual compiler, click below.</p>
               <button class="fake-btn" style="background-color: #e74c3c;" onclick="revealRealSite()">Force Execute Code</button>
          </div>
     </div>
@@ -228,5 +228,50 @@
 
          <h1 class="anniversary-title">My dearest, Jyrus...</h1>
          <p class="subtitle">Here are 6 things I've learned through 6 months of loving you</p>
+
+         <div class="grid-container">
+
+              <div class="card" onclick="openModal('Your chuchu1', 'This is where you write your chuchu1')">
+                   <img src="isa.jpg" class="card-photo" alt="Photo 1">
+                   <div class="card-title">Thing #1</div>
+              </div>
+
+              <div class="card" onclick="openModal('Your chuchu2', 'This is where you write your chuchu2')">
+                   <img src="dalwa.jpg" class="card-photo" alt="Photo 2">
+                   <div class="card-title">Thing #2</div>
+              </div>
+
+              <div class="card" onclick="openModal('Your chuchu3', 'This is where you write your chuchu3')">
+                   <img src="tatlo.jpg" class="card-photo" alt="Photo 3">
+                   <div class="card-title">Thing #3</div>
+              </div>
+
+              <div class="card" onclick="openModal('Your chuchu4', 'This is where you write your chuchu4')">
+                   <img src="apat.jpg" class="card-photo" alt="Photo 4">
+                   <div class="card-title">Thing #4</div>
+              </div>
+
+              <div class="card" onclick="openModal('Your chuchu5', 'This is where you write your chuchu5')">
+                   <img src="lima.jpg" class="card-photo" alt="Photo 5">
+                   <div class="card-title">Thing #5</div>
+              </div>
+
+              <div class="card" onclick="openModal('Your chuchu6', 'This is where you write your chuchu6')">
+                   <img src="anim.jpg" class="card-photo" alt="Photo 6">
+                   <div class="card-title">Thing #6</div>
+              </div>
+         </div>
+         
+    </div>
+
+    <div id="secretModal" class="modal">
+         <div class="modal-content">
+              <h2 id="modalTitle"></h2>
+              <p id="modalBody"></p>
+              <button class="close-btn" onclick="closeModal()">Go Back ←</button>
+         </div>
+    </div>
+     
+     
     
 </body>
