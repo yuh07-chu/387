@@ -77,7 +77,6 @@
           font-weight: bold;
      }
 
-
      #real-page {
           background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url('06102026 (1).jpeg');
           background-size: cover;
@@ -90,6 +89,132 @@
           padding: 40px 20px;
           box-sizing: border-box;
      }
-          
+
+     .anniversary-title {
+          color: #ff4d6d;
+          font-size: 2.5rem;
+          text-shadow: 2px 2px 4px rgba (0,0,0,0.2);
+     }
+
+    .subtitle {
+        font-style: italic;
+        margin-bottom: 40px
+        color: #ff758f;
+        font-weight: bold;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+
+     .grid-container {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+         gap: 25px;
+         max-width: 950px;
+         width: 100%
+     }
+
+     .card {
+         background: white;
+         padding: 18px;
+         padding-bottom: 30px;
+         border-radius: 2px;
+         box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+         transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s;
+     }
+
+     .card:hover {
+         transform: translateY(-10px) rotate(3deg)
+         box-shadow: 0 15px 25px rgba(0,0,0,0.25);
+     }
+        
+     .card-photo {
+         width: 100%;
+         height: 220px;
+         object-fit: cover;
+         border-radius: 2px;
+     }
+
+     .card-title {
+         margin-top: 18px;
+         font-family: 'Georgia', serif;
+         font-style: italic;
+         font-weight: bold;
+         color: #c9184a;
+         font-size: 1.1rem;
+     }
+
+     .modal {
+         display: none;
+         position: fixed;
+         top: 0; left: 0;
+         width: 100%; height: 100%l
+         background-color: rgba(0, 0, 0, 0.7);
+         backdrop-filter: blur(8px);
+         justify-content: center;
+         align-items: center;
+         z-index: 9999;
+     }
+
+     .modal-content {
+         background: white;
+         padding: 35px;
+         border-radius: 20px;
+         max-width: 450px;
+         width: 85%;
+         text-align: center;
+         box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+         animation: popUpEffect 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+     }
+
+     @keyframes popUpEffect {
+         from {
+             transofmr: scale(0.6);
+             opacity: 0;
+         }
+         to {
+             transform: scale(1);
+             opacity: 1;
+         }
+     }
+
+    .modal-content h2 {
+        font-family: 'Georgia', serif;
+        color: #ff4d6d;
+        margin-bottom: 15px;
+    }
+
+    .modal-content p {
+        font-size: 1.05rem;
+        line-height: 1.6;
+        color: #4a4a4a;
+        text-align: justify;
+    }
+
+    .close-btn {
+        background-color: #ff4d6d;
+        color: white;
+        border: none;
+        padding: 12px 28px;
+        border-radius: 25px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 0.95rem;
+    }
+
+    .close-btn:hover {
+        background-color: #c9184a;
+    }
   </style>
 </head>
+<body>
+
+    <canvas id="confetti-canvas"></canvas>
+
+    <div id="fake-screen-1" class="fake-body">
+        <div class="fake-card">
+            <h2>IT-302: Database Management Systems</h2>
+            <p>Welcome to the sandbox submission portal. This repository contains the framework configuration files for data sequence manipulation. Click below to initialize the repository verification process.</p>
+            <button class="fake-btn" onclick="nextFakeScreen()">Initialize Verification</button>
+        </div>
+    </div>
+    
+    
+</body>
