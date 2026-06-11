@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Web Development Assignment 3</title>
@@ -91,17 +92,28 @@
      }
 
      .anniversary-title {
-          color: #ff4d6d;
+          font-family: 'Playfair Display', serif;
+          color: #3a1520;
           font-size: 2.5rem;
+          font-style: italic;
           text-shadow: 2px 2px 4px rgba (0,0,0,0.2);
      }
 
+     .anniversary-title em {
+          color: #ff4d6d;
+          font-style: italic;
+     }
+
     .subtitle {
-        font-style: italic;
+        font-family: 'Segoe UI', sans-serifl
+        font-style: normal;
+        font-size: 0.75rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
         margin-bottom: 40px;
         color: #ff758f;
-        font-weight: bold;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        font-weight: 500;
+        text-shadow: none;
     }
 
      .grid-container {
@@ -178,7 +190,8 @@
      }
 
     .modal-content h2 {
-        font-family: 'Georgia', serif;
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
         color: #ff4d6d;
         margin-bottom: 15px;
     }
@@ -228,7 +241,7 @@
 
     <div id="real-page" style="display: none;">
 
-         <h1 class="anniversary-title">My dearest, Jyrus...</h1>
+         <h1 class="anniversary-title">My dearest, <em>Jyrus...</em></h1>
          <p class="subtitle">Here are 6 things I've learned through 6 months of loving you</p>
 
          <div class="grid-container">
