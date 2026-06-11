@@ -271,7 +271,39 @@
               <button class="close-btn" onclick="closeModal()">Go Back ←</button>
          </div>
     </div>
-     
+
+    <script>
+
+         function nextFakeScreen() {
+              document.getElemetById('fake-screen-1').style.display = 'none';
+              document.getElementById('fake-screen-2').style.display = 'flex';
+         }
+
+         function revealRealSite() {
+              document.getElementById('fake-screen-2').style.display = 'none';
+              document.getElementById('real-page').style.display = 'flex';
+
+         launchConfetti();
+         }
+
+         function openModal(title, text) {
+              document.getElementById('modalTitle').innerText = title;
+              document.getElementById('modalBody').innerText = text;
+              document.getElementById('secretModal').style.display = 'flex';
+         }
+
+         function closeModal() {
+              document.getElementById('secretModal').style.display = 'none';
+         }
+
+         window.onclick = function(event) {
+              let modal = document.getElementById('secretModal');
+              if (event.target == modal) {
+                   modal.style.display = 'none';
+              }
+         }
+         
+    </script>
      
     
 </body>
